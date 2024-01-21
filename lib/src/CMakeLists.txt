@@ -1,4 +1,4 @@
-set(LIB system-monitor-client-lib)
+set(LIB ${PROJECT_NAME}-lib)
 
 add_library(${LIB} SHARED
     Application.cpp
@@ -7,9 +7,9 @@ add_library(${LIB} SHARED
 target_include_directories(${LIB}
     # For the public header files
     PUBLIC
-    ${system-monitor-client_SOURCE_DIR}/lib/include
+    ${${PROJECT_NAME}_SOURCE_DIR}/lib/include
 
     # For only private header files
     PRIVATE
-    ${system-monitor-client_SOURCE_DIR}/lib/src
+    ${${PROJECT_NAME}_SOURCE_DIR}/lib/src
 )
