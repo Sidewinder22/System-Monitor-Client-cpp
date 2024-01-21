@@ -1,5 +1,5 @@
-set(LIB system-monitor-client-lib)
-set(TEST system-monitor-client-tests)
+set(LIB ${PROJECT_NAME}-lib)
+set(TEST ${PROJECT_NAME}-tests)
 
 enable_testing()
 

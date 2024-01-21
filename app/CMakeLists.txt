@@ -1,5 +1,5 @@
-set(APP system-monitor-client)
-set(LIB system-monitor-client-lib)
+set(APP ${PROJECT_NAME})
+set(LIB ${PROJECT_NAME}-lib)
 
 add_executable(${APP}
     main.cpp
